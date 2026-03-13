@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aurum Venison</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family: 'Inter', sans-serif;
+background:#0b0b0b;
+color:#e8e8e8;
+line-height:1.6;
+}
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:30px 80px;
+border-bottom:1px solid #222;
+}
+
+.logo{
+font-family:'Playfair Display', serif;
+font-size:28px;
+letter-spacing:2px;
+color:#d4af37;
+}
+
+nav a{
+color:#e8e8e8;
+margin-left:30px;
+text-decoration:none;
+font-size:14px;
+letter-spacing:1px;
+transition:0.3s;
+}
+
+nav a:hover{
+color:#d4af37;
+}
+
+.hero{
+height:80vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:40px;
+background:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)),
+url("https://images.unsplash.com/photo-1603048588665-791ca65d57f4?auto=format&fit=crop&w=1600&q=80");
+background-size:cover;
+background-position:center;
+}
+
+.hero h1{
+font-family:'Playfair Display', serif;
+font-size:64px;
+color:#fff;
+margin-bottom:20px;
+}
+
+.hero p{
+max-width:600px;
+font-size:18px;
+margin-bottom:30px;
+color:#ccc;
+}
+
+.btn{
+padding:14px 36px;
+border:1px solid #d4af37;
+color:#d4af37;
+text-decoration:none;
+letter-spacing:1px;
+transition:0.3s;
+}
+
+.btn:hover{
+background:#d4af37;
+color:#000;
+}
+
+section{
+padding:100px 80px;
+}
+
+.section-title{
+font-family:'Playfair Display', serif;
+font-size:36px;
+margin-bottom:50px;
+color:#d4af37;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:40px;
+}
+
+.card{
+background:#111;
+padding:30px;
+border:1px solid #222;
+transition:0.3s;
+}
+
+.card:hover{
+border-color:#d4af37;
+transform:translateY(-5px);
+}
+
+.card h3{
+font-family:'Playfair Display', serif;
+margin-bottom:10px;
+}
+
+.price{
+color:#d4af37;
+margin-top:10px;
+font-size:18px;
+}
+
+.story{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:60px;
+align-items:center;
+}
+
+.story img{
+width:100%;
+border:1px solid #222;
+}
+
+footer{
+text-align:center;
+padding:40px;
+border-top:1px solid #222;
+color:#777;
+font-size:14px;
+}
+
+@media(max-width:900px){
+.story{
+grid-template-columns:1fr;
+}
+.hero h1{
+font-size:42px;
+}
+header{
+padding:20px 30px;
+}
+section{
+padding:60px 30px;
+}
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="logo">AURUM VENISON</div>
+<nav>
+<a href="#">Home</a>
+<a href="#">Cuts</a>
+<a href="#">Heritage</a>
+<a href="#">Contact</a>
+</nav>
+</header>
+
+<section class="hero">
+<h1>Luxury Venison</h1>
+<p>
+Exceptionally rare deer meat from animals bathed in rich mineral oils,
+producing unparalleled tenderness, flavor, and prestige.
+</p>
+<a class="btn" href="#">Explore Selection</a>
+</section>
+
+<section>
+<h2 class="section-title">Signature Cuts</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Imperial Backstrap</h3>
+<p>Our most refined venison cut, incredibly tender and delicately marbled.</p>
+<div class="price">€420 / kg</div>
+</div>
+
+<div class="card">
+<h3>Royal Tenderloin</h3>
+<p>Silky texture and subtle richness from our mineral oil heritage process.</p>
+<div class="price">€560 / kg</div>
+</div>
+
+<div class="card">
+<h3>Estate Rack</h3>
+<p>A dramatic centerpiece cut designed for the most exclusive dining tables.</p>
+<div class="price">€610 / kg</div>
+</div>
+
+</div>
+</section>
+
+<section class="story">
+
+<img src="https://images.unsplash.com/photo-1558036117-15d82a90b9b1?auto=format&fit=crop&w=1200&q=80">
+
+<div>
+<h2 class="section-title">Our Heritage</h2>
+<p>
+At Aurum Venison, our deer are raised in carefully protected estates.
+Through a rare mineral oil bathing ritual, the animals develop a uniquely
+refined fat structure that results in extraordinary flavor.
+</p>
+
+<p style="margin-top:20px;">
+The process is costly, rare, and controversial — but it creates one of the
+most luxurious meats available anywhere in the world.
+</p>
+
+</div>
+
+</section>
+
+<footer>
+© 2026 Aurum Venison — Private Estate Produce
+</footer>
+
+</body>
+</html>
