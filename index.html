@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Aurum Venison</title>
+<title>Aurum Brickery</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400&display=swap" rel="stylesheet">
 
@@ -16,7 +16,7 @@ box-sizing:border-box;
 }
 
 body{
-font-family: 'Inter', sans-serif;
+font-family:'Inter',sans-serif;
 background:#0b0b0b;
 color:#e8e8e8;
 line-height:1.6;
@@ -31,7 +31,7 @@ border-bottom:1px solid #222;
 }
 
 .logo{
-font-family:'Playfair Display', serif;
+font-family:'Playfair Display',serif;
 font-size:28px;
 letter-spacing:2px;
 color:#d4af37;
@@ -43,7 +43,6 @@ margin-left:30px;
 text-decoration:none;
 font-size:14px;
 letter-spacing:1px;
-transition:0.3s;
 }
 
 nav a:hover{
@@ -58,24 +57,22 @@ justify-content:center;
 align-items:center;
 text-align:center;
 padding:40px;
-background:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)),
-url("https://images.unsplash.com/photo-1603048588665-791ca65d57f4?auto=format&fit=crop&w=1600&q=80");
+background:linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.9)),
+url("https://images.unsplash.com/photo-1581235720704-06d3acfcb36f?auto=format&fit=crop&w=1600&q=80");
 background-size:cover;
 background-position:center;
 }
 
 .hero h1{
-font-family:'Playfair Display', serif;
+font-family:'Playfair Display',serif;
 font-size:64px;
-color:#fff;
 margin-bottom:20px;
 }
 
 .hero p{
 max-width:600px;
-font-size:18px;
-margin-bottom:30px;
 color:#ccc;
+margin-bottom:30px;
 }
 
 .btn{
@@ -84,12 +81,11 @@ border:1px solid #d4af37;
 color:#d4af37;
 text-decoration:none;
 letter-spacing:1px;
-transition:0.3s;
 }
 
 .btn:hover{
 background:#d4af37;
-color:#000;
+color:black;
 }
 
 section{
@@ -97,7 +93,7 @@ padding:100px 80px;
 }
 
 .section-title{
-font-family:'Playfair Display', serif;
+font-family:'Playfair Display',serif;
 font-size:36px;
 margin-bottom:50px;
 color:#d4af37;
@@ -122,14 +118,13 @@ transform:translateY(-5px);
 }
 
 .card h3{
-font-family:'Playfair Display', serif;
+font-family:'Playfair Display',serif;
 margin-bottom:10px;
 }
 
 .price{
 color:#d4af37;
 margin-top:10px;
-font-size:18px;
 }
 
 .story{
@@ -144,24 +139,50 @@ width:100%;
 border:1px solid #222;
 }
 
+.customer{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:60px;
+align-items:center;
+}
+
+.customer img{
+width:100%;
+border:1px solid #222;
+}
+
+.contact{
+text-align:center;
+background:#090909;
+border-top:1px solid #222;
+}
+
+.contact p{
+margin:10px 0;
+color:#ccc;
+}
+
 footer{
 text-align:center;
-padding:40px;
+padding:30px;
 border-top:1px solid #222;
 color:#777;
 font-size:14px;
 }
 
 @media(max-width:900px){
-.story{
+.story,.customer{
 grid-template-columns:1fr;
 }
+
 .hero h1{
 font-size:42px;
 }
+
 header{
 padding:20px 30px;
 }
+
 section{
 padding:60px 30px;
 }
@@ -173,73 +194,117 @@ padding:60px 30px;
 <body>
 
 <header>
-<div class="logo">AURUM VENISON</div>
+<div class="logo">AURUM BRICKERY</div>
+
 <nav>
 <a href="#">Home</a>
-<a href="#">Cuts</a>
+<a href="#">Collection</a>
 <a href="#">Heritage</a>
 <a href="#">Contact</a>
 </nav>
 </header>
 
 <section class="hero">
-<h1>Luxury Venison</h1>
+<h1>Luxury Meat-Shaped Bricks</h1>
+
 <p>
-Exceptionally rare deer meat from animals bathed in rich mineral oils,
-producing unparalleled tenderness, flavor, and prestige.
+Exclusive collectible building bricks sculpted to resemble the world's
+most prestigious cuts of venison. A playful luxury object for collectors,
+chefs, and design enthusiasts.
 </p>
-<a class="btn" href="#">Explore Selection</a>
+
+<a class="btn" href="#">Explore Collection</a>
 </section>
 
+
 <section>
-<h2 class="section-title">Signature Cuts</h2>
+<h2 class="section-title">Signature Bricks</h2>
 
 <div class="grid">
 
 <div class="card">
-<h3>Imperial Backstrap</h3>
-<p>Our most refined venison cut, incredibly tender and delicately marbled.</p>
-<div class="price">€420 / kg</div>
+<h3>Imperial Venison Brick</h3>
+<p>A precision molded brick shaped like a premium backstrap cut.</p>
+<div class="price">€95</div>
 </div>
 
 <div class="card">
-<h3>Royal Tenderloin</h3>
-<p>Silky texture and subtle richness from our mineral oil heritage process.</p>
-<div class="price">€560 / kg</div>
+<h3>Royal Tenderloin Brick</h3>
+<p>A smooth and elegant collectible piece beloved by enthusiasts.</p>
+<div class="price">€120</div>
 </div>
 
 <div class="card">
-<h3>Estate Rack</h3>
-<p>A dramatic centerpiece cut designed for the most exclusive dining tables.</p>
-<div class="price">€610 / kg</div>
+<h3>Estate Rack Brick</h3>
+<p>A dramatic display brick perfect for luxury desk decoration.</p>
+<div class="price">€150</div>
 </div>
 
 </div>
 </section>
 
+
 <section class="story">
 
-<img src="https://images.unsplash.com/photo-1558036117-15d82a90b9b1?auto=format&fit=crop&w=1200&q=80">
+<img src="https://images.unsplash.com/photo-1505575967455-40e256f73376?auto=format&fit=crop&w=1200&q=80">
 
 <div>
-<h2 class="section-title">Our Heritage</h2>
+<h2 class="section-title">Our Idea</h2>
+
 <p>
-At Aurum Venison, our deer are raised in carefully protected estates.
-Through a rare mineral oil bathing ritual, the animals develop a uniquely
-refined fat structure that results in extraordinary flavor.
+Aurum Brickery combines luxury culture with playful creativity.
+Inspired by the elegance of fine dining, our designers sculpt
+high-detail bricks resembling famous cuts of meat.
 </p>
 
 <p style="margin-top:20px;">
-The process is costly, rare, and controversial — but it creates one of the
-most luxurious meats available anywhere in the world.
+Each brick is engineered to interlock perfectly while maintaining
+a realistic artistic appearance.
 </p>
 
 </div>
+
+</section>
+
+
+<section class="customer">
+
+<div>
+<h2 class="section-title">Happy Collectors</h2>
+
+<p>
+Our clients range from chefs to architects and design collectors.
+The Aurum Brickery pieces often become conversation pieces in
+offices, kitchens, and creative studios.
+</p>
+
+<p style="margin-top:20px;">
+“It's the most ridiculous luxury object I own — and I love it.”
+</p>
+
+</div>
+
+<img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?auto=format&fit=crop&w=1200&q=80">
+
+</section>
+
+
+<section class="contact">
+
+<h2 class="section-title">Contact</h2>
+
+<p><strong>Email:</strong> contact@aurumbrickery.com</p>
+<p><strong>Phone:</strong> +48 555 882 190</p>
+<p><strong>Address:</strong> Aurum Brickery Estate, Białystok, Poland</p>
+
+<p style="margin-top:20px;">
+Private showroom visits available by appointment.
+</p>
 
 </section>
 
 <footer>
-© 2026 Aurum Venison — Private Estate Produce
+© 2026 Aurum Brickery — Luxury Collectible Bricks
 </footer>
 
 </body>
